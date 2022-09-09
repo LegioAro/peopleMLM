@@ -42,7 +42,7 @@
             <div class="info-2">6 дней инсайтов с ТОП-конференции по маркетингу в США</div>
             <div class="info-2">2 часовой вебинар для своих 27 сентября</div>
           </div>
-          <div class="btn">Участвовать Бесплатно</div>
+          <div class="btn modal__btn" data-modal-src="form">Участвовать Бесплатно</div>
         </div>
       </div>
     </header>
@@ -118,7 +118,7 @@
             </p>
             <p><b> Присоединяйтесь. Это бесплатно. Пока.</b></p>
           </div>
-          <div class="btn">Присоединиться к каналу</div>
+          <div class="btn modal__btn" data-modal-src="form">Присоединиться к каналу</div>
         </div>
       </div>
     </section>
@@ -155,7 +155,7 @@
               самыми трендовыми маркетинговыми фишками еще до самой онлайн-встречи.
             </p>
           </div>
-          <div class="btn">Присоединиться к каналу</div>
+          <div class="btn modal__btn" data-modal-src="form">Присоединиться к каналу</div>
         </div>
       </div>
     </section>
@@ -217,7 +217,7 @@
             </p>
           </div>
           <div class="title-big">Где брать людей в МЛМ</div>
-          <div class="btn">Участвовать Бесплатно</div>
+          <div class="btn modal__btn" data-modal-src="form">Участвовать Бесплатно</div>
         </div>
       </div>
     </section>
@@ -235,12 +235,43 @@
             <a href="tel:+380977777497">+3809 77777 497</a>
           </div>
           <div class="footer__links">
-            <a href="" target="_blank">Политика конфиденциальности </a>
-            <a href="" target="_blank">Отказ от ответственности</a>
-            <a href="" target="_blank">Согласие с рассылкой</a>
+            <a href="https://neshkolaexpertan.online/38ideylg/politic.php" target="_blank"
+              >Политика конфиденциальности
+            </a>
+            <a href="https://neshkolaexpertan.online/38ideylg/otkaz.php" target="_blank"
+              >Отказ от ответственности</a
+            >
+            <a href="https://neshkolaexpertan.online/38ideylg/agree.php" target="_blank"
+              >Согласие с рассылкой</a
+            >
           </div>
         </div>
       </div>
     </footer>
+
+    <div class="modal__wrapper" data-modal-window="form">
+      <form action="" class="modal">
+        <div class="modal__close"><div class="modal__close-btn"></div></div>
+
+        <!-- <div class="modal__img"><img src="image/modal/box.png" alt="" /></div> -->
+        <div class="modal__title">ВНЕСИТЕ СВОИ ДАННЫЕ НИЖЕ</div>
+        <div class="modal__text">чтобы принять участие в интенсиве</div>
+        <div class="modal__input-block">
+          <input type="text" required name="" value="" placeholder="Имя" class="modal__input" />
+          <input type="email" required name="" value="" placeholder="Email" class="modal__input" />
+          <input
+            type="number"
+            required
+            name=""
+            value=""
+            placeholder="Международный Телефон (с кодом страны)"
+            class="modal__input"
+          />
+        </div>
+        <button class="btn">Попасть на Интенсив</button>
+      </form>
+    </div>
+
+    <script src="js/main.js"></script>
   </body>
 </html>

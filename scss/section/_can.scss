@@ -1,0 +1,33 @@
+.can {
+  margin-bottom: calc(40px + (80 - 40) * ((100vw - 320px) / (1440 - 320)));
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .title {
+    margin-bottom: calc(10px + (60 - 10) * ((100vw - 320px) / (1440 - 320)));
+  }
+  .roadmap {
+    margin-bottom: calc(20px + (120 - 20) * ((100vw - 320px) / (1440 - 320)));
+  }
+  .info-1 {
+    margin-bottom: calc(20px + (40 - 20) * ((100vw - 320px) / (1440 - 320)));
+  }
+}
+@media (min-width: 1440px) {
+  .can {
+    margin-bottom: 80px;
+
+    .title {
+      margin-bottom: 60px;
+    }
+    .roadmap {
+      margin-bottom: 120px;
+    }
+    .info-1 {
+      margin-bottom: 40px;
+    }
+  }
+}

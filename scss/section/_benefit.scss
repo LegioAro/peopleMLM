@@ -1,0 +1,40 @@
+.benefit {
+  margin-bottom: calc(40px + (80 - 40) * ((100vw - 320px) / (1440 - 320)));
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__img {
+    width: 100%;
+    max-width: calc(200px + (300 - 200) * ((100vw - 320px) / (1440 - 320)));
+    display: flex;
+    margin-top: -27px;
+  }
+
+  .title {
+    margin-bottom: calc(17px + (45 - 17) * ((100vw - 320px) / (1440 - 320)));
+  }
+}
+
+@media (min-width: 1440px) {
+  .benefit {
+    margin-bottom: 80px;
+    &__img {
+      max-width: 300px;
+    }
+
+    .title {
+      margin-bottom: 45px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .benefit {
+    &__img {
+      margin-top: -16px;
+    }
+  }
+}

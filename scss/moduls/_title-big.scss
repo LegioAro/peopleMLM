@@ -1,0 +1,14 @@
+.title-big {
+  font-family: 'Uni Sans Heavy Caps', sans-serif;
+  font-size: calc(38px + (96.5 - 38) * ((100vw - 320px) / (1440 - 320)));
+  line-height: calc(46px + (116 - 46) * ((100vw - 320px) / (1440 - 320)));
+  text-align: center;
+  text-transform: uppercase;
+  color: #ff1500;
+}
+@media (min-width: 1440px) {
+  .title-big {
+    line-height: 116px;
+    font-size: 96.5px;
+  }
+}

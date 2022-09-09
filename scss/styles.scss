@@ -1,0 +1,71 @@
+@import './global/_fonts';
+@import './global/_reset';
+@import './global/_global';
+
+@import './moduls/_title-big';
+@import './moduls/_title';
+@import './moduls/_info-1';
+@import './moduls/_info-2';
+@import './moduls/_btn';
+@import './moduls/_roadmap';
+@import './moduls/_list';
+
+@import './section/_header';
+@import './section/_benefit';
+@import './section/_can';
+@import './section/_where';
+@import './section/_why';
+
+.footer {
+  background-color: #0f042e;
+
+  &__wrapper {
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    a {
+      width: fit-content;
+      transition: 0.3s;
+      &:hover {
+        color: #0098ff;
+      }
+    }
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .footer {
+    &__wrapper {
+      flex-direction: column-reverse;
+      row-gap: 30px;
+    }
+    &__contact {
+      align-items: center;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    &__links {
+      flex-direction: column;
+      row-gap: 25px;
+    }
+  }
+}
